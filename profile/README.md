@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://dorsalhub.com/static/img/dorsal-logo.png" alt="DorsalHub" width="300">
+  <img src="https://dorsalhub.com/static/img/dorsal-text-512.png" alt="DorsalHub" width="300">
 </p>
 
 <p align="center">
