@@ -8,25 +8,20 @@
 
 ---
 
-Welcome to **DorsalHub**! We build tools that provide a unified, strict contract for data engineering tasks, decoupling data producers (like ML models and ad-hoc scripts) from downstream consumers. 
-
-Our ecosystem is anchored by our private-by-default platform for searching and tagging file metadata, supported by our core open-source repositories.
-
-### 📦 Core Repositories
+We build open source tools for managing, generating and validating all kinds of file metadata.
 
 * **[`dorsal`](https://github.com/dorsalhub/dorsal)**
-  Our primary Python library and CLI tool for extracting metadata. It runs a local-first extraction pipeline, checks annotations against strict schemas, and pushes records directly to DorsalHub.
+  Our primary Python library and CLI tool for extracting metadata. Use Dorsal to build and execute extraction models; orchestrate ETL pipelines; or inspect files from the CLI.
   
 * **[`open-validation-schemas`](https://github.com/dorsalhub/open-validation-schemas)**
-  The backbone of our data contracts. This repository houses our strict, versioned JSON schemas for standardizing everything from audio transcriptions to object detection and LLM outputs. 
+  Strict, versioned JSON schemas for standardizing common data engineering outputs, e.g. audio transcription, object detection, document extraction. 
 
 * **[`dorsal-adapters`](https://github.com/dorsalhub/dorsal-adapters)**
-  The bridge to external systems. This strictly typed Python library translates Open Validation Schemas-compliant JSON records into industry-standard formats (like `.srt`, `.vtt`, or `.tsv`), and parses them back into JSON.
+  Translates Open Validation Schemas-compliant JSON records into industry-standard formats (like `.srt`, `.vtt`, or `.tsv`).
 
 ### 🔗 Resources
 
 * **Website**: [dorsalhub.com](https://dorsalhub.com)
-* **Documentation**: [docs.dorsalhub.com](https://docs.dorsalhub.com)
 
 ---
 *All of our open-source tools are provided under the Apache 2.0 license.*
