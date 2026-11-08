@@ -3,25 +3,23 @@
 </p>
 
 <p align="center">
-  <strong>Generating, validating, and managing structured file metadata.</strong>
+  <strong>An annotation platform for files: annotate any file, by hand or with models.</strong>
 </p>
 
 ---
 
-We build open source tools for managing, generating and validating all kinds of file metadata.
+[DorsalHub](https://dorsalhub.com) indexes files by their hashes and stores annotations about them: metadata, extracted text, transcripts and more. Our tools are open source.
 
 * **[`dorsal`](https://github.com/dorsalhub/dorsal)**
-  Our primary Python library and CLI tool for extracting metadata. Use Dorsal to build and execute extraction models; orchestrate ETL pipelines; or inspect files from the CLI.
-  
-* **[`open-validation-schemas`](https://github.com/dorsalhub/open-validation-schemas)**
-  Strict, versioned JSON schemas for standardizing common data engineering outputs, e.g. audio transcription, object detection, document extraction. 
+  Python library and CLI. Scan files, run annotation models, build pipelines, and push results to DorsalHub.
 
-* **[`dorsal-adapters`](https://github.com/dorsalhub/dorsal-adapters)**
-  Translates Open Validation Schemas-compliant JSON records into industry-standard formats (like `.srt`, `.vtt`, or `.tsv`).
+* **[`pdf-extractor`](https://github.com/dorsalhub/pdf-extractor)**
+  Fast, deterministic PDF text and layout extraction with pdfium. Install with `dorsal model install`.
 
-### 🔗 Resources
+* **[`whisper`](https://github.com/dorsalhub/whisper)**
+  Speech-to-text transcription with CTranslate2-based Whisper models.
 
-* **Website**: [dorsalhub.com](https://dorsalhub.com)
+Annotations follow [OATS](https://oatschema.org), the Open Annotation Task Schemas: strict, versioned JSON Schemas for model outputs, with validators for Python, JavaScript and Rust ([github.com/oatschema](https://github.com/oatschema)).
 
 ---
-*All of our open-source tools are provided under the Apache 2.0 license.*
+*Our open-source tools are licensed under Apache 2.0.*
